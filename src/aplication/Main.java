@@ -25,7 +25,8 @@ public class Main {
         System.out.print("Email: ");
         String email = sc.nextLine();
         System.out.print("Birth date (DD/MM/YYYY): ");
-        LocalDate nascimento = LocalDate.parse(sc.nextLine(), dtf);
+        String temp = sc.nextLine();
+        LocalDate nascimento = LocalDate.parse(temp, dtf);
 
         Client client = new Client(nome, email, nascimento);
 
